@@ -13,6 +13,7 @@
    background-position: center;
 }
 
+
 .contaner nav{
    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
    display: flex;
@@ -21,6 +22,49 @@
    padding-left: 7%;
    padding-right: 8%;
    box-shadow: 2px 2px 30px rgba(0,0,0,0.7);
+}
+
+.contaner nav .btn-contaner{
+display: flex;
+align-items: center;
+}
+
+btn {
+   background-color: #007bff; 
+   padding: 10px 20px;
+   margin: 10px;
+   border-radius: 5px;
+   color: white;
+   font-size: 16px;
+   font-weight: bold;
+   display: inline-block;
+   text-align: center;
+   cursor: pointer;
+transition: background-color 0.3s;
+transform: 0.3s;
+}
+
+.music-btn audio {
+   width: 100%; 
+   background: transparent;
+   border: none;
+}
+
+.music-btn {
+   width: 160px;  
+   /* background-color: #0d0312d4;  */
+   padding: 0%;;
+   margin-left: 40px;
+   margin-right: 10px;
+   border-radius: 5px;
+   display: inline block;
+   text-align: center;
+   transition: 0.3s;
+   transform: 0.3s;
+}
+.music-btn:hover {
+   /* background-color: #0056b3; */
+   transform: scale(1.1);
 }
 
 .contaner nav .logo img{
@@ -98,6 +142,8 @@
    text-shadow: 3px 0 20px black;
    font-size: 75px;
 }
+
+
 
 .about{
    width: 100%;
@@ -285,16 +331,19 @@
 .end_page .download_app{
    display: flex;
    justify-content: center;
+   gap: 20px;
    position: relative;
-   top: 380px;
+   top: 360px;
    cursor: pointer;
 }
 
 .end_page .download_app img{
-   width: 180px;
+   width: 200px;
    margin: 10px;
+   transition: 0.3s ease-in-out;
 }
 
 .end_page .download_app img:hover{
-   box-shadow: 0 0 10px rgba(228,226,226);
+   transform: scale(1.1);
+   box-shadow: 0 0 10px rgba(228,226,226,0.7);
 }
